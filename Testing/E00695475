@@ -1,0 +1,84 @@
+Test Case 1: Missile Launch with Right Click
+•	Precondition: The game is running, and no missiles are currently on screen. The player is positioned at the center bottom.
+•	Action: Right-click the mouse.
+•	Postcondition: A missile is launched from the center bottom of the screen, moving straight up at a constant speed.
+
+Test Case 2: Missile Launch with Space Bar
+•	Precondition: The game is running, and no missiles are currently on screen. The player is positioned at the center bottom.
+•	Action: Press the space bar.
+•	Postcondition: A missile is launched from the center bottom of the screen, moving straight up at a constant speed.
+
+Test Case 3: Max Active Missiles
+•	Precondition: There are already 5 missiles active on the screen.
+•	Action: Attempt to launch another missile by right-clicking or pressing the space bar.
+•	Postcondition: No new missile is launched; the count of active missiles remains at 5.
+
+Test Case 4: Missiles Disappearing Off-Screen
+•	Precondition: A missile is in motion on the screen.
+•	Action: Allow the missile to continue moving until it exits the top of the screen.
+•	Postcondition: The missile disappears and is no longer counted as active.
+
+Test Case 5: Missile Speed Consistency
+•	Precondition: Multiple missiles are launched simultaneously.
+•	Action: Observe the missiles as they travel upwards.
+•	Postcondition: All missiles maintain the same constant speed; there are no variations in speed.
+
+Test Case 6: Missiles Going Straight Up
+•	Precondition: A missile has just been launched.
+•	Action: Monitor the missile's trajectory.
+•	Postcondition: The missile travels straight up without veering off course.
+
+Test Case 7: Missile Hits Ship
+•	Precondition: A missile and a ship are present on the screen, on a collision course.
+•	Action: Allow the missile to hit the ship.
+•	Postcondition: The missile and ship are removed from the screen, an explosion is displayed, and the hit count increases by 1.
+
+Test Case 8: Random Ship Launch with No Active Ships
+•	Precondition: No ships are currently active on the screen.
+•	Action: Wait for the game to automatically launch a ship.
+•	Postcondition: A ship spawns from a random side (left or right) at a random position in the top two-thirds of the screen.
+
+Test Case 9: Different Ships with Correct Images
+•	Precondition: Ships are spawning in the game.
+•	Action: Observe the different types of ships as they appear.
+•	Postcondition: Each type of ship displays the correct image, and all ship types have an equal chance of being launched.
+
+
+Test Case 10: Max Active Ships
+•	Precondition: There are already 10 ships active on the screen.
+•	Action: Attempt to launch an 11th ship.
+•	Postcondition: No new ship appears, and the count of active ships remains at 10.
+
+Test Case 11: Random Ship Launch Location and Speed
+•	Precondition: The game is set to launch ships randomly, and no ships are active.
+•	Action: Watch the next ship as it spawns.
+•	Postcondition: The ship appears from either the left or right side of the screen and moves at a randomly determined speed.
+
+Test Case 12: Ship Goes Off-Screen
+•	Precondition: A ship is in motion across the screen.
+•	Action: Allow the ship to move off the side of the screen.
+•	Postcondition: The ship disappears from the screen and is no longer counted as active.
+
+Test Case 13: Game Ends After 10 Hits
+•	Precondition: The player has successfully hit 9 ships.
+•	Action: Hit one more ship to reach a total of 10 hits.
+•	Postcondition: The game ends, displaying the final score.
+
+Test Case 14: Game Ends with Left Click
+•	Precondition: The game is running with active ships and missiles on the screen.
+•	Action: Left-click the mouse.
+•	Postcondition: The game ends immediately, and the final score is displayed.
+
+Test Case 15: Game Ends with Esc Key
+•	Precondition: The game is running with active ships and missiles on the screen.
+•	Action: Press the Esc key.
+•	Postcondition: The game ends right away, showing the final score.
+
+Test Case 16: Game Ends After Inactivity
+•	Precondition: The game is active, but no missiles have been launched in the last 4 minutes and 55 seconds.
+•	Action: Wait for a total of 5 minutes without launching any missiles.
+•	Postcondition: The game automatically ends after 5 minutes of inactivity, displaying the final score.
+
+Possible Missing Requirement:
+•	Audio Feedback: There is no mention of sound effects (for missile launches, hits, or explosions).
+
