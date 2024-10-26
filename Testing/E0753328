@@ -1,37 +1,67 @@
-Test Cases
+Missiles
 
+Missile launches on right mouse click
+Precondition: Game is running, and no missiles are currently on the screen.
+Action: User right-clicks the mouse.
+Postcondition: A missile appears from the bottom center of the screen and travels vertically upwards.
 
-Missiles:
--Test: Missiles launch when right mouse is clocked. 
--	Happy path: Missile will appear from the bottom center of screen and travel upwards in a vertical path
--Test: Missile launches when user presses space. 
-	- HP: Missile will appear in the same way as when right mouse is clicked 
--Test: Exceed missile limit by launching more than 5. 
-	HP: No more than 5 missiles will be permitted, so nothing will happen.
--Test: missile travels off the screen.
-	HP: That rogue missile is removed from the list of missiles activity on the screen.
--Test: Test missile speed and direction mechanics by launching several back to back
-	HP: They will all travel up the screen in a consistent manner 
+Missile launches on space bar press
+Precondition: Game is running, and no missiles are currently on the screen.
+Action: User presses the space bar.
+Postcondition: A missile appears from the bottom center of the screen and travels vertically upwards, similar to the right-click launch.
 
-Ships:
+Exceed missile limit by attempting to launch more than five missiles
+Precondition: Game is running with no missiles on the screen.
+Action: User presses the space bar or right-clicks six times in rapid succession.
+Postcondition: Only five missiles appear; additional launch attempts after the fifth do not result in more missiles.
 
--Test: No active ships trigger a new ship launch; test by allowing all ships to be destroyed. 
-	HP: Various different ships will start to appear at a 30% launch rate. 
--Test: Test that the ship count does not exceed 10 by allowing multiple to launch
-	HP: At max 10 ships will spawn.
--Test: Ship launches from either screen side. 
-	HP: Ships should change which side they spawn from. 
+Missile travels off-screen
+Precondition: Game is running, and a missile is traveling upward.
+Action: Allow the missile to move off the top of the screen.
+Postcondition: The missile is removed from the list of active missiles on the screen.
 
-Destruction: 
--Test: Launch a missile to hit a ship. 
-	HP: They both disappear and an animation triggers. 
--Test: Hit count increments when appropriate. 
-	HP: The hit count increases with each hit. 
+Test missile speed and direction consistency
+Precondition: Game is running with no active missiles on the screen.
+Action: User presses the space bar or right-clicks multiple times in succession to launch several missiles back-to-back.
+Postcondition: All missiles travel upward in a consistent manner, maintaining the same speed and direction.
 
-End: 
--Test: Game ends after 10 hits. 
-	HP: The game will initiate ending sequence after 10 hits. 
--Test: Game ends when user hits left mouse, ESC, or inactivity. 
-	HP: The game ends. 
+Ships
 
+Trigger new ship launch after all ships are destroyed
+Precondition: Game is running, and there are no active ships on the screen.
+Action: Allow all existing ships to be destroyed.
+Postcondition: New ships start appearing at a 30% launch rate.
+
+Ship count limit at maximum of 10 ships
+Precondition: Game is running, with multiple ships allowed to launch.
+Action: Allow multiple ships to launch until the screen fills.
+Postcondition: No more than 10 ships appear on the screen simultaneously.
+
+Ship launches from either side of the screen
+Precondition: Game is running, with ships spawning actively.
+Action: Observe multiple ships as they launch.
+Postcondition: Ships spawn from both the left and right sides of the screen in alternating or random patterns.
+Destruction
+
+Missile hits a ship
+Precondition: Game is running with at least one ship and one missile active on the screen.
+Action: Launch a missile so it collides with a ship.
+Postcondition: Both the missile and the ship disappear, and an animation (such as an explosion) is triggered.
+
+Hit count increments correctly
+Precondition: Game is running with a visible hit counter on the screen.
+Action: Hit ships with multiple missiles, tracking the hit count.
+Postcondition: The hit count increases by one for each successful missile hit on a ship.
+
+End
+
+Game ends after 10 hits
+Precondition: Game is running with a visible hit counter, initially set below 10.
+Action: Achieve 10 successful missile hits on ships.
+Postcondition: The game initiates its ending sequence once 10 hits are reached.
+
+Game ends on user-triggered action or inactivity
+Precondition: Game is running.
+Action: User hits the left mouse button, presses the ESC key, or allows a period of inactivity.
+Postcondition: The game ends.
 	 
