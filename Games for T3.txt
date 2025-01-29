@@ -1,0 +1,9 @@
+Games for T3: Class Driver, Conquest, Ball Wall Hit
+ClassDriver:
+Features - 
+	* Time countdown once you start the game. You lose time when obstacles and are hit. 
+	* Bucky as driver in convertible car.
+	* End goal is on campus. Once the goal is reached it ends the game
+	* scoring is based on how many seconds you had left whenever the game ended.
+	* Records top score, and last run score.
+	* Move side to side with arrow keys
