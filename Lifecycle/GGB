@@ -1,0 +1,50 @@
+Team Name: GGB
+Jericho McGowan
+Jackson Kraus
+Seth Emerine
+Jonathon Thorton
+Avery Gordon
+
+Requirements
+Gathering deliverables to figure out what the solution will do.
+-	Meet with client to gather the requirements/deliverables
+-	Determine what the client wants from this project
+-	May consist of a deliverable, usually in the form of a submitted document
+-	Determine if any libraries/packages are allowed to be used
+-	Categorize between functional and non-functional requirements
+-	Determine security requirements
+-	Develop a Solution Requirements Specification (SRS)
+
+Design
+Laying out the requirements into a process and an outline that would lead the project to completion.
+-	Determine the coding language to be used
+-	Determine what resources are at hand to figure out if in-house software will need to be developed or if 3rd party software will be needed
+-	Will consist of multiple iterations
+-	This phase is focused on fulfilling requirements
+
+Implementation
+Taking requirements and design and using them to create the solution
+-	Beginning of the coding process
+-	Create classes that were outlined in the design phase
+
+Test
+Ensure the project functions as intended. Iron out any problems/bugs.
+-	Capture test cases in test documents to record test history
+-	Check for any errors in the solution
+-	Match the solution to requirements with traceability matrix
+
+Release
+Post the first usable version of the software post-testing for public or client usage.
+-	The release product may include notes, README files, and guides for the software/application
+
+Support/Maintenance
+Work on finding flaws that were not initially noticed and assist the client.
+-	Troubleshooting with the client
+-	Assisting the client in using the application
+-	Error reporting methods and creating a chain of information that points toward the source of bugs when they occur
+
+Upgrade/Updates
+After the software is functioning and live, implement new features to improve upon the existing product without making any huge changes to the core functionality.
+-	Propose new ideas that implement a new/unused feature
+-	Upgrade user interface to improve usability
+-	Improve security
