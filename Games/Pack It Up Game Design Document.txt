@@ -1,0 +1,14 @@
+﻿Team Members: 
+Peyton Minnick
+Kai Ravnborg
+Chris Cleveland
+Noah Coleman
+Alex 
+Pack It Up Game Design Document
+
+Pack It Up is a simple, timed arcade genre game with the main goal being to pack as many cardboard boxes of varying shapes with an assortment of randomly generated blocks in a set time limit.
+The cardboard boxes would function similarly to a “kanoodle” box with the blocks being similar to tetris blocks. 
+The player needs to take the random assortment of tetris blocks that are delivered by a conveyor belt and pack them into the given cardboard boxes, leaving no empty spaces in order for them to count towards the player’s score. 
+Once a box is fully packed, the box disappears from the player’s screen and it is added to the player’s score. 
+The main challenge of the game is attempting to balance multiple cardboard boxes and blocks in a limited amount of work space with the player being penalized if they overcrowd their work space with too much stuff. 
+Once the timer reaches zero, the game tallies the player’s score based on how many boxes they packed and if their work space is overcrowded before prompting the player if they want to play again.
