@@ -1,1 +1,14 @@
-
+Classdriver:
+Features - 
+	* Time countdown once you start the game.
+  * You lose time when obstacles and are hit. 
+	* Bucky as driver of the car
+  * Bucky is driving a convertible car.
+	* End goal is to reach campus.
+  * Once the goal is reached it ends the game
+	* scoring is based on how many seconds you had left whenever the game ended.
+	* Records top score
+  * Records last run score
+	* Move side to side with arrow keys  
+Truthfully did not see the assignment until class period. These are the requirements determined as a team in class.
+  
