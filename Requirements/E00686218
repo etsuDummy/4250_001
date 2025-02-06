@@ -1,0 +1,125 @@
+--Donkey Kong--
+
+User input 
+
+-Ability for the system to handle user input actions like jumping & moving left and right 
+
+Trackable hit points 
+
+-Way to disqualify a player if they make enough mistakes 
+
+Visual graphics  
+
+-Responsive layout, players have to be able to see what they’re working with and how its changing in real time 
+
+Levels (static or continuous) 
+
+-Either there are ways to beat individual levels, or it goes on forever with the goal of going for as long as possible  
+
+Ranking system  
+
+-There must be a way to differentiate who has had the best attempts at the game, for example who has survived the longest or finished a set amount of levels the fastest  
+
+Barrels  
+
+-Obstacles (such as barrels) must be present in order to add difficulty in finishing the level  
+
+Power-ups  
+
+-Special power ups that assist the player in finishing the game faster (fire flowers, mushroom, etc) 
+
+Timer  
+
+-Timer to see how quickly users finish levels or how long they have survived for 
+
+Ability to dodge obstacles 
+
+-Similar to user input, each obstacle must be dodge-able or breakable so users can continue to move forward – no absolute blocks   
+
+Different scenes/settings 
+
+-Different settings and backgrounds to change up what types of obstacles are present and how the user can get around them, allows for user creativity  
+
+--Coffee shop--  
+
+User input 
+
+-Ability for the system to handle user input actions moving from section to section of the store 
+
+Timed activities 
+
+-There must be mini games that require the user to keep track of time, such as cooking or mixing or whatever else 
+
+Customer orders  
+
+-There must be instructions for order creation for the player to follow 
+
+Detail oriented minigame (section of the food process) 
+
+-Decoration or topping section, grades the user on how well they can perform detailed tasks using fine motor control skills  
+
+Shop upgrades 
+
+-Must be a way to increase shop functionality, such as timers for timed mini games, doorbell to tell when customers enter, automatic functions for reaction time mini games, etc 
+
+Metrics for customer satisfaction 
+
+-Player must be graded on how well they met the customer’s order requirements and how quickly they did it 
+
+Reaction time mini game 
+
+-Mini game to time how quickly a player can respond, such as a sliding scale that must be stopped at a specific time or a timed countdown to push a button  
+
+Leveling system 
+
+-Must be a way to see how a user has progressed, using experience points or another metric, so that the user can feel like they’re progressing  
+
+Increased order complexity 
+
+-With the increase in level, the order complexity will be increased by customers (more toppings, different options added as time goes on, etc.)  
+
+Visual graphics 
+
+-Users must be able to see what’s happening and respond to it   
+
+--Moral Kombat-- 
+
+User input 
+
+-Ability for the system to handle user input actions like jumping & moving left and right 
+
+Trackable hit points  
+
+-Way to disqualify a player and see if they won against the computer or not  
+
+Ranking system 
+
+-Must be a way to see who the best at the game is based on how quickly they can take down an opponent   
+
+Visual graphics 
+
+-Users must be able to see what’s happening and respond to it 
+
+Computer generated opponent  
+
+-User must be able to play single player against an opponent, difficulty levels for computer opponent should be options like easy, medium, hard, etc 
+
+Fighting moves 
+
+-There must be preprogrammed fighting moves using different button combinations for users to levy against an opponent  
+
+Different characters to choose from 
+
+-There must be different characters with different fighting moves to choose from  
+
+Different scenes/settings 
+
+-Different settings and backgrounds to change up what types of obstacles are present and how the user can get around them, allows for user creativity 
+
+Dodging/blocking capability  
+
+-There must be the capability for users to block or dodge opponent moves, and maybe to counterstrike  
+
+Arena edge/out of bounds line (crossable or uncrossable) 
+
+-There must be an edge of the arena that either cannot be physically crossed or that once crossed eliminates a character from the battle  
