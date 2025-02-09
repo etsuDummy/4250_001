@@ -1,0 +1,44 @@
+Bucky Barrels Requirements:                                                            Team members: David Alsobrooks, Alex Cox, Laynie Jaramillo, Kirsten Moore, Corie Rivers
+
+** In this document it includes placeholder names for objects/obstacles/etc.
+
+1. trackable hit points/ points (mandatory/functional)
+- how much does each obstacle take from damage/lives
+2. mobile friendly controls (up, down, left, right) (mandatory/functional)
+ -swipe/tab
+ -dpad in bottom/corner of screen ?
+3. player name leader board (optional)
+-set characters allowed for input ?
+4. set number of lives (mandatory/non-functional)
+- three ? five ? lives til game mode end
+5. obstacles must follow preset movements (mandatory/non-functional) 
+- based on where the barrel/obstacle spawns, it moves down the screen in a set way
+- WHEN they are released, order they fall, spawn point are all randomized but once they are in, should all fall in a specific way
+6. multiple levels (themes, backgrounds) moving on once previous is completed (optional)
+- the different levels of the ship
+7. distinct background themes going through the levels of a pirate ship (optional)
+-below deck, main, in the sails
+8. 2d physics enacted for character movements (non-functional)
+9. power-up (mario kart esq) (optional)
+ - "star" makes you invincible for a set amount of time
+ - "mushroom" makes player larger and "increases lives" in that duration. maybe adds 2 extra hit to be taken while in that form
+ - "thunder bolt" temporarily disables/less damage done all enemies/obstacles for set amount of time
+ - "banana peels/shell" taking these powerups will allow the player to also deal damage to enemies
+10. transition loading screens in between levels (optional)
+11. seperate sound effects specfic to movements of players and obstacles launched (optional)
+ - sounds are tied to movements (up, down, left, right)
+ - another set of sounds that are made when fighting enemies and they get hit with powerups, etc.
+12. obstacles randomly appear one at a time (launched one at a time, multiple barrels not appearing at once from same areas (optional)
+13. portrait/ vertical graphics (mandatory/functional)
+14. instruction/ help screen (mandatory/functional)
+- tell user the objective of the game
+- lays out button functions
+- hints/tips/tricks
+- etc. ** add any other help screen functions
+15. default character attributes (mandatory)
+ - ** please expand
+
+(added post class requirements - feel free to expand on previous and new ideas !!)
+16. different game modes (optional)
+ - story mode (to reach a final boss/retrieve final "trophy")
+ - surviror mode (how u compete with those across campus - at end if top 5 can put username in leaderboard.
