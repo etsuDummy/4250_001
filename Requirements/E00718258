@@ -1,14 +1,63 @@
-Classdriver:
-Features - 
-	* Time countdown once you start the game.
-  * You lose time when obstacles and are hit. 
-	* Bucky as driver of the car
-  * Bucky is driving a convertible car.
-	* End goal is to reach campus.
-  * Once the goal is reached it ends the game
-	* scoring is based on how many seconds you had left whenever the game ended.
-	* Records top score
-  * Records last run score
-	* Move side to side with arrow keys  
-Truthfully did not see the assignment until class period. These are the requirements determined as a team in class.
-  
+Conquest:
+    1. Players can recruit and deploy troops to their nation/faction
+    2. Probability based system based on a 6 sided dice that determines the outcome of combat.
+    3. Create a world map divided into territories based upon the number of players
+    4. Units travel in groups joined with other types of units
+    5. Multiple types of units with different attributes exist.
+    6. Implement a unit movement and position system.
+    7. Implement an mineral/resource system that allows for an economy to be developed
+    8. A combination of types of minerals/resources allow for a territory to be upgraded.
+    9. A combination of types of minerals/resources allow for a unit to be upgraded.
+    10. Implement a difficulty multiplier setting
+    11. Create achievements for completion of specific objectives.
+    12. Allow for players to create custom maps
+    13. Create a research tree for players to spend resources to unlock new unit/territory upgrades.
+    14. Implement a point based victory system.
+    15. Points are gained based on what percentage of the total territories are owned/controlled
+    16. Multiple players are able play and take turns playing on one client
+    17. Implement statistics tracking for unit combat.
+    18. Allow for alliances/open-borders to be formed with other players
+    19. Allow for AI/Bot matches to be held locally
+    20. Each type of unit has a unique sound effect upon destruction.
+Class Driver
+    1. Side-scrolling driving game
+    2. Time countdown mechanic
+    3. Scoring system based on remaining time once you reach campus.
+    4. Bucky is the main character
+    5. Bucky is inside of a convertible car
+    6. The player navigates obstacles/terrain using arrow keys
+    7. Create a road with obstacles (traffic cones, cars, and lanes being closed)
+    8. Scrolling cityscape in the background
+    9. Collission detection
+    10. Negate time for each obstacle hit.
+    11. End the game when time reaches zero
+    12. End the game with 2 or more obstacles have been hit.
+    13. Make timer visible in the top left.
+    14. Track the last 10 scores of the player.
+    15. Increasing difficulty of how fast the player responds to obstacles as the game goes on.
+    16. create a goal to beat the game (reach campus)
+    17. Add coins for collection.
+    18. The more coins you have, the faster you go.
+    19. Add a pause button.
+    20. Create a menu for beginning and ending the game.
+Ball Wall Hit
+    1. Single player mode
+    2. Design a rectangular play area with walls on the left and right side of the screen. They will be the long sides of the rectangle.
+    3. 2 disconnected walls that are 1/10 of the size of the distance between the solid walls on the left and right side of the screen.
+    4. The disconnected walls are controlled by AI or players.
+    5. The player controls wall using arrow keys (left, right).
+    6. Ball moves between the two walls 
+    7. Ball has angle based physics bouncing from the walls
+    8. Ball speed is based on how fast the player/ai wall is moving on contact.
+    9. create a velocity system
+    10. track player score
+    11. player scores based on if the ball goes behind the opposing AI’s wall. 
+    12. AI opponent development
+    13. AI difficulty is scalable/controllable.
+    14. Add wall hit sound effects
+    15. Create a score based system that counts upwards from 0
+    16. The higher the time that you survive against the AI/Bot the better score you have.
+    17. Track highest scores
+    18. Add powerups that the ball can hit 
+    19. Create a menu with start, settings, exit, and leaderboard.
+    20. Add a failure screen for when the ball gets behind the players wall that allows the player to replay or exit.
