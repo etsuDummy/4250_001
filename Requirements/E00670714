@@ -1,0 +1,24 @@
+Working Menu Screen (Mandatory)
+Pause Menu with quit and continue options (Mandatory)
+Ability to Pick Up Blocks and move them around the screen (Mandatory)
+Blocks moving right to left on screen and eventually off screen (Mandatory)
+A grid system for packing boxes (Mandatory)
+Score system (Mandatory)
+System for generating different types of boxes (Mandatory)
+A "work bench" area for placing boxes and blocks (Mandatory)
+A system for playing background music (Optional)
+A timer that ends when a "level" is over (Mandatory)
+
+Game Loop (Happy Path)
+Enters Main Menu
+Hits button to start game
+A box is created
+timer starts ticking down from a starting time of three minutes
+blocks start sliding across the screen
+player drags blocks onto desk, back into conveyer or into a box's grid
+Points are awarded when a box's grid is completely full
+The full box disappears
+A new box appears
+Game loop continues until timer reaches 0
+Player is shows total points
+Player is prompted to play again or quit

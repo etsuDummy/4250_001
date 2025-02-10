@@ -1,0 +1,10 @@
+// different game modes- free style, level, etc.
+// have different skin modes
+// player must be able to move left right up down
+// player has a button to avoid obstavle
+// create a score system
+// have a set sound effects that match to a movement
+// game is self increasing as time and completion is done
+// create obstacles that create a hinderance to the player
+// have items that get the player more points
+// only have a set number of lives depending on the game mode
