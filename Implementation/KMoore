@@ -1,0 +1,19 @@
+Requirements
+
+1. The program must use Recursion
+2. The program must take user input
+3. The program must make sure the user input is a number
+4. The program must create 2 numbers from user input
+5. The program must add the 2 given numbers together
+6. The program must have a variable to hold the sum of the 2 given numbers
+7. The program must have a variable to hold the least significant digit
+8. The program must make sure the user input is not negative
+9. The program must make sure the user input is not a decimal
+10.The program must divide the sum by 10
+11.The program must save the sum divided by 10 in a variable
+12.The program must add the sum divided by 10 and the saved least significant digit
+13.The program must use recursion until a single digit is all that remains
+
+Assumption-Only Positive Integers will be entered into this program
+	  -There is no dummy rule in this program.
+Design
