@@ -1,0 +1,164 @@
+//initial course of actions :
+// Team Members Alex Cox Laynie J
+user inputs a integer of choice 
+creates array of integer length based on the places (1s,10s,100s,...etc.) it takes up
+into for {
+seperates the least significant digit from the input
+parses the rest of the array to string
+takes the single digit number ( the least sig digit) and adds it to the string 
+//keeps following this logic until left with a single digit
+add least sig digit to newly parsed string }
+//loop executes array length -1
+return a single digit
+
+
+requirements: 
+//solves the problem with recursion
+1. takes in 2 numbers (float or integer) (positive or negative)
+2. if the input was a float, be able to parse float into a string
+	removes the decimal point and converts back to an integer
+3. seperates the least sig digit from the number to add to remaning digits.
+4. adds the two inputs together
+5. use recursion logic to add the numbers
+6. returns a single digit
+
+design(uml):
++-----------------------------------+
+|             Program               |
++-----------------------------------+
+| - main(): void                    |
++-----------------------------------+
+                |
+                | uses
+                v
++-----------------------------------+
+|         NumberProcessor           |
++-----------------------------------+
+| + add_and_reduce(num1: float,     | // calls the reduce_to_single_digit method
+|                  num2: float): int|
+| - reduce_to_single_digit(num: int)|
+|                              : int|
++-----------------------------------+
+                |
+                | uses
+                v
++-----------------------------------+
+|           InputHandler            |
++-----------------------------------+
+| + get_user_input(): tuple[float,  | //handles any inputs that arent a whole num (int)
+|                           float]  |
++-----------------------------------+
+                |
+                | uses
+                v
++-----------------------------------+
+|           OutputHandler           |
++-----------------------------------+
+| + display_result(result: int)     |
++-----------------------------------+
+
+PYTHON Implementation:
+
+import math
+
+def recursive_digit_sum(number):
+    """
+    Recursively reduces a number by separating the least significant digit and 
+    adding it to the remaining part until a single-digit number is obtained.
+    
+    Handles:
+      - Floats: Converts to int if the float ends with .0; otherwise, removes the decimal point.
+      - Negative numbers: Uses arithmetic operations that work correctly with negatives.
+    
+    Parameters:
+        number (int or float): The number to reduce.
+    
+    Returns:
+        int: A single-digit integer resulting from the recursive sum.
+    """
+    # --- Float Handling ---
+    # If 'number' is a float:
+    if isinstance(number, float):
+        if number.is_integer():
+            # If the float is actually an integer (ends in .0), convert to int.
+            number = int(number)
+        else:
+            # For floats with a fractional part, remove the decimal point.
+            # Convert the float to a string to manipulate it.
+            s = str(number)
+            if s[0] == '-':
+                # For negative numbers, preserve the negative sign.
+                number = int('-' + s[1:].replace('.', ''))
+            else:
+                number = int(s.replace('.', ''))
+    
+    # --- Base Case ---
+    # If the number is already a single digit (handling negatives as well),
+    # then return it directly.
+    if -10 < number < 10:
+        return number
+    
+    # --- Extracting Digits Using Arithmetic ---
+    # Use truncation division to get the 'remaining' part of the number.
+    # This handles negatives correctly (e.g., int(-123/10) yields -12).
+    remaining = int(number / 10)
+    
+    # Compute the least significant digit.
+    # The last digit is the difference between the original number and the remaining part multiplied by 10.
+    last_digit = number - (remaining * 10)
+    
+    # Print the current step of computation.
+    print(f"Current sum: {remaining} + {last_digit} = {remaining + last_digit}")
+    
+    # Recursively call the function with the new sum.
+    return recursive_digit_sum(remaining + last_digit)
+
+def main():
+    """
+    Main function for the console application.
+    
+    - Prompts the user to enter two numbers.
+    - Sums the numbers and then recursively reduces the result to a single digit.
+    - Accepts both integer and float inputs.
+    - Allows quitting the application by entering 'q'.
+    """
+    while True:
+        try:
+            # Prompt the user for the first number (or 'q' to quit)
+            first_input = input("Enter the first number (or 'q' to quit): ")
+            if first_input.lower() == 'q':
+                break
+            
+            # Prompt the user for the second number (or 'q' to quit)
+            second_input = input("Enter the second number (or 'q' to quit): ")
+            if second_input.lower() == 'q':
+                break
+            
+            # Convert the user inputs to floats.
+            first_number = float(first_input)
+            second_number = float(second_input)
+            
+            # Convert floats that are actually integers (ending with .0) to int.
+            if first_number.is_integer():
+                first_number = int(first_number)
+            if second_number.is_integer():
+                second_number = int(second_number)
+            
+            # Sum the two numbers.
+            total_sum = first_number + second_number
+            print(f"Initial sum: {first_number} + {second_number} = {total_sum}")
+            
+            # Apply the recursive digit sum algorithm.
+            final_result = recursive_digit_sum(total_sum)
+            print(f"Final single-digit result: {final_result}\n")
+            
+        except ValueError:
+            # If the user input cannot be converted to a number, print an error message.
+            print("Invalid input. Please enter valid numbers.")
+
+# Entry point of the application.
+if __name__ == "__main__":
+    main()
+	
+	
+	//needs to account for if the user inputs a char string or anything outside the scope of a number/int/float/dec...etc. Did not properly handle decimal points exactly due to recursive array reading.
