@@ -57,7 +57,7 @@ design(uml):
 | + display_result(result: int)     |
 +-----------------------------------+
 
-PYTHON Implementation:
+PYTHON Implementation used ChatGPT o3 to apply design to code.:
 
 import math
 
