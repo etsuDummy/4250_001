@@ -1,4 +1,5 @@
 //initial course of actions :
+// Team Members Alex Cox Laynie J
 user inputs a integer of choice 
 creates array of integer length based on the places (1s,10s,100s,...etc.) it takes up
 into for {
