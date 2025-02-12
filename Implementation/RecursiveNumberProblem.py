@@ -1,4 +1,4 @@
-# Recursive Number Problem Alex Cox Laynie Jaramillo
+# Recursive Number Problem Alex Cox Laynie Jaramillo used ChatGPT o3 to apply design to code.
 def recursive_digit_sum(number):
     """
     Recursively reduces a number by removing its last digit (from its string representation)
