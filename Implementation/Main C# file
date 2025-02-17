@@ -1,0 +1,51 @@
+namespace _2_12_25_In_class_exercise
+{
+    //Base code is from ChatGPT (doesn't correctly function, modificatins are mine & commented as such)
+    //Code isn't entirely funcitonal with recursion yet 
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Enter the first number: ");
+            string num1 = Console.ReadLine();
+
+            Console.Write("Enter the second number: ");
+            string num2 = Console.ReadLine();
+
+            decimal result = AddNumbers(num1, num2);
+
+            Console.WriteLine($"The final result is: {result}");
+        }
+        static decimal AddNumbers(string num1, string num2)
+        {
+            decimal total = decimal.Parse(num1) + decimal.Parse(num2);
+            return AddDigits(total);
+        }
+
+        static decimal AddDigits(decimal number)
+        {
+            int numberLength = number.ToString().Length; //edited
+            if (Math.Abs((int)number) < 10)
+            {
+                return number;
+            }
+            else
+            {
+                int sign = 1;
+                if (number < 0)
+                {
+                    sign = -1;
+                    number = -number;
+                }
+
+                string digits = number.ToString();
+                decimal leastSignificantDigit = decimal.Parse(digits.Substring(digits.Length - 1));
+                decimal remainingDigits = decimal.Parse(digits.Substring(0, digits.Length - 1));
+
+                decimal result = sign * AddDigits(sign * remainingDigits) + sign * leastSignificantDigit;
+                if (numberLength > 1) { result = sign* AddDigits(sign* remainingDigits) +sign * leastSignificantDigit; } //edited
+                return result;
+            }
+        }
+    }
+}

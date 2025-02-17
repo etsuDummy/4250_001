@@ -1,0 +1,47 @@
+Rough idea
+Take two numbers from the user. Then ask the person using the program to enter two numbers.
+Then we add the two numbers together, then break the sum into digits and add them together recursively.
+
+Then look at the number from right to left:
+Taking the last digit and add it to the rest of the number, then do this until the number becomes a single digit. Finally, return the final single-digit result. Once we have a single number left, we stop and show the answer.
+
+
+Requirements:
+- The program should prompt the user to enter two numbers.
+- The input should be whole numbers (integers).
+- The program should handle possible incorrect inputs (like letters or symbols) gracefully.
+- The two input numbers should be added together.
+- The sum should be broken down by:
+1. Extracting the last digit.
+2. Adding the last digit to the remaining part of the number.
+3. Repeating the process recursively.
+4. The recursion should continue until a single-digit number is obtained.
+- The program should display the final single-digit result.
+- The output should be clear and formatted properly.
+
+Assumptions - since the problem statement does not provide all details, we make the following assumptions:
+
+Input Type:
+- The numbers entered by the user are assumed to be positive integers (i.e., no negative numbers or decimals). If a user enters a non-numeric value, the program should handle it gracefully.
+
+Handling Zero:
+- If both numbers sum to 0, the result should also be 0.
+
+Edge Cases:
+- If the user enters very large numbers, the program should still work correctly. If the sum is already a single-digit number, it should return that number immediately.
+
+The Depth limit of the recursion:
+- Since the process involves recursion, we assume that C#’s recursion limit will not be exceeded, as numbers naturally shrink during the process.
+
+storyboard
+We ask the user for two numbers 
+Then we validated that number  
+	We check for positive whole numbers 
+If the number is a negative and or a non-whole number, it kicks you back and asks you to enter another two numbers until the user enters two positives 
+When validation is correct 
+We add the digits together 
+We take the sum of these two numbers and run it through an if statement 
+	This if statement will check to see if it’s greater than 9
+	If it’s greater than 9 it will go into the recursion method 
+	If it’s less than or equal to 9 it will spit out the sum of those two numbers
+We create a method with one 

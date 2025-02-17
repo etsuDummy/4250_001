@@ -42,3 +42,12 @@ Bucky Barrels Requirements:                                                     
 16. different game modes (optional)
  - story mode (to reach a final boss/retrieve final "trophy")
  - surviror mode (how u compete with those across campus - at end if top 5 can put username in leaderboard.
+17. Addendum to power-up, all of these are optional because power-ups in general are optional (optional)
+- The set amount of time the "star" is active should be between 5-10 seconds.
+- The set amount of time the "thunderbolt" is active should also be between 5-10 seconds.
+- The "banana peel" should do damage equal to one hit from the player.
+- The "shell" should defeat any enemy immediately, except for boss enemies.
+18. The Game's player-character must look like ETSU's mascot "Bucky" (mandatory)
+19. The Game's boss should look like ETSU's old mascot "Old Bucky" (mandatory)
+- The old mascot is simply the previous design of Bucky
+- It is the one with grey skin and a bandana instead of a hat
