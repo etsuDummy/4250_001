@@ -1,4 +1,4 @@
-Test Cases for Battleship Program
+Test Cases for Battleship Program [16]
 
 Test Case 1: Missile Launch Using Right Mouse Click
 - Pre-condition: Game is running, user has not exceeded missile limit.
@@ -113,7 +113,4 @@ Test Case 16: Game Ends After 5 Minutes of Inactivity
 - Post-condition (Happy Path): Game ends.
 - Post-condition (Unhappy Path): Game continues past 5 minutes.
 
-
-Total test cases: 16
-Test types included: Functional Testing, Boundary Testing, UI Interaction Testing, Game State Management.
 
