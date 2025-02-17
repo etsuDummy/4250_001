@@ -1,20 +1,28 @@
 Game Class Driver:
-
-Requirements
-1.	A game timer that starts when the game begins and stops when the game ends. (R, F) – Measured in seconds, displayed on screen.
-2.	The main character, Bucky, must be the player-controlled driver. (R, NF)
-3.	AI-controlled bot drivers must be present in the game. (R, F)
-4.	Collisions reduce the remaining game time by x seconds per hit. (R, F) – Displayed visually and in the UI.
-5.	A leaderboard that stores the top 5 highest scores. (R, NF) – Sorted from highest to lowest.
-6.	Players can unlock and select from x different cars for Bucky. (O, NF)
-7.	Bot drivers may appear in either cars or trucks, chosen randomly. (O, NF)
-8.	Three difficulty settings: Easy, Medium, and Hard, adjusting bot speed and spawn rate. (O, NF)
-9.	Players control movement using left and right arrow buttons on the screen. (R, F)
-10.	A tutorial explaining game mechanics before the first playthrough. (O, NF)
-11.	The game world consists of three lanes for movement. (R, F)
-12.	A main menu with Start, Settings, and Exit options. (R, F)
-13.	All in-game actions, including collisions and movement, must have corresponding animations. (R, F)
-
-
-Constraints:
-1.	The game must run smoothly on mobile devices with touch controls. (R, F)
+Requirements:
+1.	The program must display a timer
+  a)	The timer must be displayed on the screen
+  b)	The timer must run down as the game is active
+  c)	The timer must pause when game is paused
+2.	The program must have obstacles
+  a)	The obstacles must decrease time when collided with
+  b)	The obstacles must move (drive)
+  c)	The obstacles could look different (have different models)
+  d)	The obstacles could have selective difficulties
+3.	The program must have a menu
+  a)	The menu must have a start button
+  b)	The menu must have a quit button
+  c)	The menu could have a settings button
+  d)	The menu must display the User top 5 scores from the player
+4.	The program could have a settings menu
+5.	The program must have a UI
+  a)	The program must have the player characterized as ‘Bucky’
+  b)	The program could have selective cars for the user
+  c)	The program must have buttons to move
+  d)	The program must have three lanes for the user to navigate
+  e)	The program must have animations on:
+    I.	Collisions
+    II.	Start
+    III.	Finish
+    IV.	Navigation of lanes
+6.	The program could have a tutorial
