@@ -56,3 +56,20 @@ Precondition: A user has started the game
 Action: A user has recorded 10 hits
 Postcondition: The game imitates an end screen that notifies the game is over due to this goal being met 
 
+More Test Cases
+Requirement	  Precondition			                Action					                          Postcondition
+2		          No active ships			              Ships are initialized and launched	      Ships are supported
+
+2.a		        No active ships	detected	        Initiate ship launch			                System detects an active ship
+
+2.c		        Type of ship initialized	        Appropriate image displayed		            System displays appropriate image for ship type
+
+2.d		        Less than 10 ships active	        Solution randomly initiates ship launch	  Solution launches ship
+
+2.d.i		      Ship is being launched		        Random selection from ship types	        System launches ship with selected type
+
+2.d.ii		    10 active ships			              No ship launch				                    10 active ships
+
+2.d.iii 	    Ship is being initiated		        Launch spot randomly selected		          Ship is launched from selected spot
+
+2.e		        Ship moves off screen		          That ship made inactive			              That ship is inactive
