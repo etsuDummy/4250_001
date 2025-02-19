@@ -1,0 +1,41 @@
+Requirements:
+
+- Take user input as string
+
+- Calculate ASCII character occurrence
+
+- Print all found ASCII characters
+
+- Print top 3 ASCII characters in string
+
+- Print characters not found
+
+- Print reverse string
+
+
+
+
+Pseudo Code:
+
+Prompt user for input string
+Create char_count dictionary, set to empty
+
+For each character in input string:
+    If character 
+        If character in char_count dictionary, increment count for character in char_count dictionary
+        Else
+            Add character to char_count dictionary, set count to 1
+
+Print "Total number of occurrences for each character:"
+For each character and count in char_count dictionary
+    Print character and count
+
+Print "Top 3 characters in string"
+For each character in char_count dictionary
+    Print top 3 characters using char_count value
+
+Print "Number of characters not detected: "
+???
+
+Print "String in reverse order: "
+Print string in reverse order using slicing
