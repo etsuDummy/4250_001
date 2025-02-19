@@ -1,0 +1,61 @@
+Requirements – Battleship Budget Boys E00514497
+
+
+
+3.) 
+😊 <precondition> Game is actively running, and the hit count is at 9 hits <precondition>
+<action>User initiates a missile launch that results in the 10th hit<action>
+<postcondition>Game ends after the 10th hit is registered<postcondition>
+
+☹ <precondition> Game is actively running with 9 hits counted <precondition>
+<action>User initiates a missile launch that results in the 10th hit<action>
+<postcondition>Game does not end, keeps running, and registering hits<postcondition>
+
+4.) 
+😊 <precondition>Game is actively running<precondition>
+<action>User clicks left mouse button<action>
+<postcondition>Game ends immediately upon left click<postcondition>
+
+☹ <precondition>Game is actively running<precondition>
+<action>User clicks left mouse button<action>
+<postcondition>Game does not end and continues running<postcondition>
+
+
+
+5.)
+😊 <precondition>Game is actively running<precondition>
+<action>User clicks the esc button<action>
+<postcondition>Game ends immediately upon esc click<postcondition>
+
+☹ <precondition>Game is actively running<precondition>
+<action>User clicks the esc button<action>
+<postcondition>Game does not end and continues running<postcondition>
+
+6.)
+😊 <precondition>Game is actively running, and a missile has not been launched <precondition>
+<action>Game idles for 5 minutes with no input<action>
+<postcondition>Game ends immediately after 5 minutes<postcondition>
+
+☹ <precondition>Game is actively running, and a missile has not been launched <precondition>
+<action>Game idles for 5 minutes with no input<action>
+<postcondition>Game doesn’t end and continues running with no input<postcondition>
+
+iii.) 
+😊 <precondition>Game is actively running and spawning ships<precondition>
+<action>Observe ship spawning patterns and initiate launch<action>
+<postcondition>Ships spawn in various random locations<postcondition>
+
+
+☹ <precondition>Game is actively running and spawning ships<precondition>
+<action>Ship spawning patterns are not randomized and initiate launch<action>
+<postcondition>Ships do not spawn randomly and repeat patterns<postcondition>
+
+iii. 1.)
+😊 <precondition>Game is actively running and spawning ships<precondition>
+<action>Observe ship spawning patterns and initiate launch<action>
+<postcondition>Ship spawns from left or right side<postcondition>
+
+
+
+
+
