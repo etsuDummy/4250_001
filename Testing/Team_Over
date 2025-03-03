@@ -1,0 +1,24 @@
+Battleship Program Tests
+Team: Peyton Minnick, Alex Burns, Kai Ravnborg
+
+1. Happy Path: <Pre: While game is running> <Action: User right clicks or presses space bar> <Post: A single missle is shot>
+    Happy Path: <Pre: There are 5 active missles on the screen> <Action: User attempts to fire another missle> <Post: No new active missle is created>
+    Happy Path: <Pre: The game is running> <Action: The user right clicks and holds it down.> <Post: A single missle is shot>
+    Unhappy Path: <Pre: While game is running> <Action: Press any button except for right click> <Post: No missle is fired>
+    Unhappy Path: <Pre: There are 5 active missles on the screen> <Action: User attempts to fire another missle> <Post: There are six or more active missles on screen>
+
+2. Happy Path: <Pre: The Game is running> <Action: None> <Post: Ships are launched in the top 2/3's of the screen when the screen is empty and move either left or right across the screen>
+    Unhappy Path: <Pre: There are no ships on the screen> <Action: None> <Post: No new ships are launched>
+
+3. Happy Path: <Pre: The user's hit count is equal to 9> <Action: The user hits a ship with an active missle> <Post: The game ends>
+   Unhappy Path: <Pre: The user's hit count is equal to 9> <Action: The user hits a ship with an active missle> <Post: The game does not end>
+   Unhappy Path: <Pre: The user's hit count is less than 9> <Action: The user hits a ship with an active missle> <Post: The game does end>
+
+4. Happy Path: <Pre: While the game is running> <Action: User left clicks> <Post: The game ends>
+   Unhappy Path: <Pre: While the game is running> <Action: User left clicks> <Post: The game does not end>
+
+5. Happy Path: <Pre: While the game is running> <Action: User clicks the escape key> <Post: The game ends>
+   Unhappy Path: <Pre: The game is running> <Action: The user clicks the escape key> <Post: The game does not end>
+
+6. Happy Path: <Pre: While the game is running> <Action: User waits five minutes while not interacting with the program> <Post: The game ends>
+   Unhappy Path: <Pre: While the game is running> <Action: User waits five minutes while not interacting with the program> <Post: The game does not end>
